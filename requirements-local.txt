@@ -1,0 +1,10 @@
+-r requirements.txt
+# Measured server GPU stack; Linux/NVIDIA environment required.
+torch==2.13.0
+vllm==0.28.0
+torchao==0.18.0
+transformers==5.16.1
+safetensors==0.8.0
+mistral-common==1.11.7
+# Optional Hugging Face backend:
+accelerate
