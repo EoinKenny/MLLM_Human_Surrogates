@@ -27,3 +27,6 @@
 !/requirements.txt
 !/sys_eng/run_recommender_system.py
 !/teaching/run_teaching.py
+!/teaching/combine_results.py
+!/teaching/analyze_results.py
+!/teaching/DATA_DICTIONARY.md

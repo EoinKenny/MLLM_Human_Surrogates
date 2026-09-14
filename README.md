@@ -69,3 +69,9 @@ The teaching parser accepts both integer and decimal answer tags. Compare histor
 ## Repository policy
 
 `.gitignore` is an explicit allowlist of the reviewed source files. New files are ignored until added to the allowlist, including outputs, downloaded data, checkpoints, archives, private keys and local collection approvals. Do not use `git add -f` for generated or sensitive files. No license has been selected for this initial snapshot.
+
+## Final teaching release
+
+`teaching/run_teaching.py` is the single active teaching experiment entry point: five features, the fixed five demonstration pairs, 300 simple-random questions, and the new local causal sentence. Older teaching designs are retired to private archives and are not included in this repository. Other project experiments are unchanged. The exact historical server supervisor and inputs are also privately archived.
+
+The final combined dataset covers nine API and three open-weight models in one long-format CSV, distributed privately for now. It is not committed. See [the data dictionary](teaching/DATA_DICTIONARY.md) for schema, provenance limits and scoring. `teaching/combine_results.py` assembles it from original exports; `teaching/analyze_results.py` reproduces the paired 1,000 × n=30 bootstrap plot. These tools do not make model calls.

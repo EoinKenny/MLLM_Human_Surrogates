@@ -1,3 +1,7 @@
+"""Final teaching protocol: five features, fixed demonstrations, random n=300, local causal wording.
+
+Historical designs are retired. Use --prepare-only to generate inputs without inference.
+"""
 import sys
 import os
 # Add parent directory to path so we can import from src
